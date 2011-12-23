@@ -1,4 +1,3 @@
-.cvsignore
 Changes
 lib/Fuse/Class.pm
 Makefile.PL
@@ -6,6 +5,9 @@ MANIFEST
 META.yml			Module meta-data (added by MakeMaker)
 README
 t/00-load.t
+t/10subclass.t
+t/80fuse28.t
 t/pod-coverage.t
 t/pod.t
-t/subclass.t
+test/fuse28.pm
+test/test-run.pl

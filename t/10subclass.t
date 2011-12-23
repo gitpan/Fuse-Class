@@ -75,7 +75,7 @@ is(&$mkdir("/never-found"), -Errno::EPERM());
 
 # not implemented
 my $getattr = $Fuse_main{getattr};
-is(&$getattr("/"), -Errno::EPERM());
+is($fs->can('getattr') ? &$getattr("/") : -Errno::EPERM(), -Errno::EPERM());
 
 # default implement
 is($fs->readlink("/not/found"), -Errno::ENOENT());

@@ -18,6 +18,9 @@ To install this module, run the following commands:
 	make test
 	make install
 
+(For the full test, you need Test::Virtual::Filesystem module.)
+
+
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the
